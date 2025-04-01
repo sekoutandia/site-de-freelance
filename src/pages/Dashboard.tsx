@@ -3,7 +3,23 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
-import { BarChart3, LayoutDashboard, ListChecks, MessageSquare, Users } from "lucide-react";
+import { 
+  BarChart3, 
+  LayoutDashboard, 
+  ListChecks, 
+  MessageSquare, 
+  Users,
+  User,
+  Star,
+  PenLine,
+  LayoutPanelLeft,
+  Globe,
+  Film,
+  Code,
+  Megaphone,
+  BookOpen,
+  GraduationCap
+} from "lucide-react";
 
 const revenueData = [
   { name: "Jan", total: 1200 },
@@ -18,6 +34,24 @@ const revenueData = [
 const Dashboard = () => {
   return (
     <div className="flex min-h-screen flex-col">
+      {/* Category Navigation similar to comeup.fr */}
+      <div className="border-b border-border/40 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-between py-4 gap-4">
+            <CategoryCard icon={<User className="h-6 w-6" />} title="Pour vous" />
+            <CategoryCard icon={<Star className="h-6 w-6" />} title="Meilleurs services" />
+            <CategoryCard icon={<LayoutPanelLeft className="h-6 w-6" />} title="Design & Graphisme" />
+            <CategoryCard icon={<Globe className="h-6 w-6" />} title="SEO & Communication" />
+            <CategoryCard icon={<Film className="h-6 w-6" />} title="Audiovisuel" />
+            <CategoryCard icon={<Code className="h-6 w-6" />} title="Site & Développement" />
+            <CategoryCard icon={<PenLine className="h-6 w-6" />} title="Rédaction" />
+            <CategoryCard icon={<Megaphone className="h-6 w-6" />} title="Réseaux sociaux" />
+            <CategoryCard icon={<BookOpen className="h-6 w-6" />} title="Business" />
+            <CategoryCard icon={<GraduationCap className="h-6 w-6" />} title="Formations & Coaching" />
+          </div>
+        </div>
+      </div>
+
       <div className="flex-1 space-y-4 p-8 pt-6">
         <div className="flex items-center justify-between space-y-2">
           <h2 className="text-3xl font-bold tracking-tight">Tableau de bord</h2>
@@ -208,6 +242,18 @@ const Dashboard = () => {
           </TabsContent>
         </Tabs>
       </div>
+    </div>
+  );
+};
+
+// Component for the category navigation
+const CategoryCard = ({ icon, title }: { icon: React.ReactNode, title: string }) => {
+  return (
+    <div className="flex flex-col items-center space-y-2 cursor-pointer hover:text-primary transition-colors px-2">
+      <div className="w-12 h-12 rounded-full flex items-center justify-center">
+        {icon}
+      </div>
+      <span className="text-xs text-center font-medium whitespace-nowrap">{title}</span>
     </div>
   );
 };
