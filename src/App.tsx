@@ -20,6 +20,18 @@ import Orders from "./pages/dashboard/Orders";
 import Messages from "./pages/dashboard/Messages";
 import Settings from "./pages/dashboard/Settings";
 
+// Import all new category pages
+import PourVous from "./pages/dashboard/PourVous";
+import MeilleursServices from "./pages/dashboard/MeilleursServices";
+import DesignGraphisme from "./pages/dashboard/DesignGraphisme";
+import SEOCommunication from "./pages/dashboard/SEOCommunication";
+import Audiovisuel from "./pages/dashboard/Audiovisuel";
+import SiteDeveloppement from "./pages/dashboard/SiteDeveloppement";
+import Redaction from "./pages/dashboard/Redaction";
+import ReseauxSociaux from "./pages/dashboard/ReseauxSociaux";
+import Business from "./pages/dashboard/Business";
+import FormationsCoaching from "./pages/dashboard/FormationsCoaching";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -45,6 +57,18 @@ const App = () => (
             <Route path="orders" element={<Orders />} />
             <Route path="messages" element={<Messages />} />
             <Route path="settings" element={<Settings />} />
+            
+            {/* Nouvelles routes pour les catégories */}
+            <Route path="pour-vous" element={<PourVous />} />
+            <Route path="meilleurs-services" element={<MeilleursServices />} />
+            <Route path="design-graphisme" element={<DesignGraphisme />} />
+            <Route path="seo-communication" element={<SEOCommunication />} />
+            <Route path="audiovisuel" element={<Audiovisuel />} />
+            <Route path="site-developpement" element={<SiteDeveloppement />} />
+            <Route path="redaction" element={<Redaction />} />
+            <Route path="reseaux-sociaux" element={<ReseauxSociaux />} />
+            <Route path="business" element={<Business />} />
+            <Route path="formations-coaching" element={<FormationsCoaching />} />
           </Route>
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
