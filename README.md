@@ -1,67 +1,87 @@
-📘 README – Site de Freelance "Lovable Freelance"
-🧩 Présentation du Projet
-Lovable Freelance est une plateforme innovante qui connecte des recruteurs à la recherche de talents avec des freelances ou salariés disponibles à l'embauche. Le site facilite la communication, le recrutement et la collaboration entre les deux parties.
+🧩 Slide 1 – Titre
+Titre : Lovable Freelance
+Sous-titre : La plateforme pour connecter recruteurs et freelances
+Visuel suggéré : Illustration de personnes travaillant à distance, iconographie moderne
+Couleurs : Bleu pastel, violet doux, blanc
+Icônes : 📁 💼 🤝
 
-🔗 Voir la démo du site
+🚀 Slide 2 – Objectif du site
+Titre : Pourquoi Lovable Freelance ?
+Texte :
+- Simplifie la mise en relation entre recruteurs et freelances
+- Communication facile et recrutement rapide
+- Visibilité accrue pour les freelances et accès à de nouvelles missions
+Visuel : Illustration de deux personnes discutant en ligne
+Couleurs : Fond clair, icônes de communication modernes
 
-🚀 Fonctionnalités Principales
-✅ Pour les recruteurs
-Recherche de profils par compétence, localisation ou disponibilité
+👤 Slide 3 – Fonctionnalités pour les recruteurs
+Titre : Fonctionnalités pour les recruteurs
+Texte :
+- 🔍 Recherche avancée de profils par compétences
+- 📁 Accès à des profils détaillés (CV, portfolio)
+- 💬 Messagerie instantanée avec les freelances
+- 📩 Envoi direct de propositions de mission ou d'embauche
+Mise en page : 2 colonnes avec icônes + texte
+Couleurs : Bleu pastel, icônes modernes
 
-Consultation de profils complets (CV, portfolio, expériences)
+🧑‍💻 Slide 4 – Fonctionnalités pour les freelances
+Titre : Fonctionnalités pour les freelances
+Texte :
+- 👤 Création de profil personnalisé
+- 🧐 Mise en avant des compétences et expériences
+- 📨 Réception d'offres de mission ou d'emploi
+- 💬 Communication directe avec les recruteurs
+Visuel : Illustration de freelance en action
+Couleurs : Turquoise, lavande, icônes ludiques
 
-Messagerie intégrée pour échanger directement avec les freelances
+🛠️ Slide 5 – Stack Technique
+Titre : La technologie derrière Lovable
+Texte :
+- Frontend : Next.js, React
+- Backend : Node.js, Express
+- Base de données : PostgreSQL
+- Authentification : Auth0, JWT
+- Temps réel : WebSockets (Socket.io)
+- UI : Tailwind CSS + composants custom
+Visuel : Diagramme simple stack technique
+Couleurs : Sobre, fond clair, typos techniques
 
-Système d’offre d’emploi et de proposition de missions
+📌 Slide 6 – Fonctionnalités à venir
+Titre : Bientôt disponible !
+Texte :
+- 💳 Paiements sécurisés intégrés
+- ⭐ Système de notation et d'avis
+- 🔗 Connexion à des outils RH tiers (LinkedIn, Notion)
+- 🤖 Suggestions automatiques de profils
+Visuel : Timeline d'évolution
+Couleurs : Dynamique, accentuation sur les nouveautés
 
-🧑‍💻 Pour les freelances
-Création de profil personnalisé
+🧳️ Slide 7 – Installation locale
+Titre : Installer Lovable Freelance
+Texte :
+1. git clone https://github.com/votre-utilisateur/lovable-freelance.git
+2. cd lovable-freelance
+3. npm install
+4. npm run dev
+Prérequis : Node.js 18+, PostgreSQL, API Auth0
+Visuel : Illustration "Dev Setup"
 
-Mise en avant des compétences et expériences
+🤝 Slide 8 – Contribuer
+Titre : Rejoins l'aventure !
+Texte :
+- Fork le repo
+- Crée une branche : git checkout -b feature/nouvelle-fonction
+- Push et ouvre une Pull Request
+- Signale des bugs ou propose des idées !
+Visuel : Illustration "open source community"
 
-Réception de propositions de missions
-
-Chat en temps réel avec les recruteurs
-
-💡 Objectif
-Créer un espace fluide et accessible pour :
-
-Simplifier les démarches de recrutement freelance
-
-Favoriser des connexions humaines et professionnelles de qualité
-
-Offrir un outil centralisé pour la gestion des profils, candidatures et conversations
-
-🛠️ Stack Technique
-Frontend : Next.js / React
-
-Backend : Node.js + API REST
-
-Base de données : PostgreSQL
-
-Authentification : Auth0
-
-Notifications & chat : Socket.io / Firebase
-
-UI/UX : Tailwind CSS + composants personnalisés
-
-📌 À venir
-Intégration de systèmes de paiement
-
-Mise en place d’un système de notation
-
-Algorithme de recommandation de talents
-
-Mode "équipe" pour les agences
-
-🤝 Contribuer
-Toute suggestion ou contribution est la bienvenue !
-N’hésite pas à ouvrir une issue, proposer une pull request, ou simplement nous envoyer un message.
-
-📫 Contact
-Email : contact@lovable.app
-
-Instagram : @lovablefreelance
-
-LinkedIn : Lovable Freelance
+📢 Slide 9 – Contact
+Titre : On reste en contact !
+Texte :
+- Site : lovable.app
+- Email : contact@lovable.app
+- Instagram : @lovablefreelance
+- LinkedIn : Lovable Freelance
+Visuel : Icônes de réseaux sociaux modernes
+Couleurs : Ton chaud et amical
 
