@@ -1,69 +1,67 @@
-# Welcome to your Lovable project
+📘 README – Site de Freelance "Lovable Freelance"
+🧩 Présentation du Projet
+Lovable Freelance est une plateforme innovante qui connecte des recruteurs à la recherche de talents avec des freelances ou salariés disponibles à l'embauche. Le site facilite la communication, le recrutement et la collaboration entre les deux parties.
 
-## Project info
+🔗 Voir la démo du site
 
-**URL**: https://lovable.dev/projects/45ec32ce-64c6-4f98-a528-30c4b59b8940
+🚀 Fonctionnalités Principales
+✅ Pour les recruteurs
+Recherche de profils par compétence, localisation ou disponibilité
 
-## How can I edit this code?
+Consultation de profils complets (CV, portfolio, expériences)
 
-There are several ways of editing your application.
+Messagerie intégrée pour échanger directement avec les freelances
 
-**Use Lovable**
+Système d’offre d’emploi et de proposition de missions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/45ec32ce-64c6-4f98-a528-30c4b59b8940) and start prompting.
+🧑‍💻 Pour les freelances
+Création de profil personnalisé
 
-Changes made via Lovable will be committed automatically to this repo.
+Mise en avant des compétences et expériences
 
-**Use your preferred IDE**
+Réception de propositions de missions
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Chat en temps réel avec les recruteurs
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+💡 Objectif
+Créer un espace fluide et accessible pour :
 
-Follow these steps:
+Simplifier les démarches de recrutement freelance
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Favoriser des connexions humaines et professionnelles de qualité
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Offrir un outil centralisé pour la gestion des profils, candidatures et conversations
 
-# Step 3: Install the necessary dependencies.
-npm i
+🛠️ Stack Technique
+Frontend : Next.js / React
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Backend : Node.js + API REST
 
-**Edit a file directly in GitHub**
+Base de données : PostgreSQL
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Authentification : Auth0
 
-**Use GitHub Codespaces**
+Notifications & chat : Socket.io / Firebase
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+UI/UX : Tailwind CSS + composants personnalisés
 
-## What technologies are used for this project?
+📌 À venir
+Intégration de systèmes de paiement
 
-This project is built with .
+Mise en place d’un système de notation
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Algorithme de recommandation de talents
 
-## How can I deploy this project?
+Mode "équipe" pour les agences
 
-Simply open [Lovable](https://lovable.dev/projects/45ec32ce-64c6-4f98-a528-30c4b59b8940) and click on Share -> Publish.
+🤝 Contribuer
+Toute suggestion ou contribution est la bienvenue !
+N’hésite pas à ouvrir une issue, proposer une pull request, ou simplement nous envoyer un message.
 
-## I want to use a custom domain - is that possible?
+📫 Contact
+Email : contact@lovable.app
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Instagram : @lovablefreelance
+
+LinkedIn : Lovable Freelance
+
