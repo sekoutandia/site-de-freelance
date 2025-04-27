@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { BarChart, TrendingUp, PieChart, Target } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Business = () => {
   return (
@@ -36,21 +37,53 @@ const Business = () => {
         <div className="mt-8">
           <h2 className="text-xl font-semibold mb-4">Consultants business</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="border rounded-lg p-4 hover:shadow-md transition-shadow">
-                <div className="flex items-center mb-3">
-                  <div className="w-10 h-10 rounded-full bg-gray-200 mr-3"></div>
-                  <div>
-                    <h3 className="font-medium">Consultant {item}</h3>
-                    <p className="text-xs text-muted-foreground">Expert en stratégie d'entreprise</p>
+            {[
+              {
+                id: 1,
+                title: "Stratégie d'entreprise",
+                image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+                description: "Accompagnement stratégique pour startups et PME",
+                consultant: "StrategistPro",
+                price: 125
+              },
+              {
+                id: 2,
+                title: "Analyse financière",
+                image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+                description: "Optimisation financière et business planning",
+                consultant: "FinanceExpert",
+                price: 150
+              },
+              {
+                id: 3,
+                title: "Études de marché",
+                image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+                description: "Analyse approfondie des marchés et tendances",
+                consultant: "MarketAnalyst",
+                price: 135
+              }
+            ].map((service) => (
+              <Link 
+                key={service.id}
+                to={`/service/${service.id}`}
+                className="border rounded-lg overflow-hidden hover:shadow-md transition-shadow"
+              >
+                <div className="aspect-video w-full overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-medium mb-2">{service.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-3">{service.description}</p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-muted-foreground">{service.consultant}</span>
+                    <span className="font-semibold">{service.price}€/h</span>
                   </div>
                 </div>
-                <p className="text-sm text-muted-foreground mb-3">Accompagnement stratégique pour startups et PME, développement commercial.</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Top Rated</span>
-                  <span className="font-semibold">{100 + (item * 25)}€/h</span>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

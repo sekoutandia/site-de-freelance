@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Code, Globe, Smartphone, Database } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const SiteDeveloppement = () => {
   return (
@@ -48,15 +48,53 @@ const SiteDeveloppement = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-6 mt-6">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="border rounded-lg p-4 hover:shadow-md transition-shadow">
-                <h3 className="font-medium mb-2">Développeur full-stack</h3>
-                <p className="text-sm text-muted-foreground mb-3">Développement de sites web, applications et solutions techniques personnalisées.</p>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">DevPro{item}</span>
-                  <span className="font-semibold">{60 + (item * 20)}€/h</span>
+            {[
+              {
+                id: 1,
+                title: "Site Web Full Stack",
+                image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+                description: "Développement complet d'applications web modernes",
+                dev: "FullStackPro",
+                price: 80
+              },
+              {
+                id: 2,
+                title: "Applications Mobiles",
+                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+                description: "Développement d'apps iOS et Android",
+                dev: "MobileExpert",
+                price: 90
+              },
+              {
+                id: 3,
+                title: "Architecture Cloud",
+                image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+                description: "Solutions cloud scalables et sécurisées",
+                dev: "CloudArchitect",
+                price: 95
+              }
+            ].map((service) => (
+              <Link 
+                key={service.id}
+                to={`/service/${service.id}`}
+                className="border rounded-lg overflow-hidden hover:shadow-md transition-shadow"
+              >
+                <div className="aspect-video w-full overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-              </div>
+                <div className="p-4">
+                  <h3 className="font-medium mb-2">{service.title}</h3>
+                  <p className="text-sm text-muted-foreground mb-3">{service.description}</p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-muted-foreground">{service.dev}</span>
+                    <span className="font-semibold">{service.price}€/h</span>
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
