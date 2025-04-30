@@ -31,6 +31,7 @@ import Redaction from "./pages/dashboard/Redaction";
 import ReseauxSociaux from "./pages/dashboard/ReseauxSociaux";
 import Business from "./pages/dashboard/Business";
 import FormationsCoaching from "./pages/dashboard/FormationsCoaching";
+import IntelligenceArtificielle from "./pages/dashboard/IntelligenceArtificielle";
 
 const queryClient = new QueryClient();
 
@@ -69,6 +70,7 @@ const App = () => (
             <Route path="reseaux-sociaux" element={<ReseauxSociaux />} />
             <Route path="business" element={<Business />} />
             <Route path="formations-coaching" element={<FormationsCoaching />} />
+            <Route path="intelligence-artificielle" element={<IntelligenceArtificielle />} />
           </Route>
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

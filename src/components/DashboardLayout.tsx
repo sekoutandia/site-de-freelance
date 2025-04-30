@@ -10,7 +10,8 @@ import {
   Code,
   Megaphone,
   BookOpen,
-  GraduationCap
+  GraduationCap,
+  BrainCog
 } from "lucide-react";
 
 // Component for the category navigation, now with links
@@ -41,6 +42,7 @@ const DashboardLayout = () => {
             <CategoryCard icon={<PenLine className="h-6 w-6" />} title="Rédaction" link="/dashboard/redaction" />
             <CategoryCard icon={<Megaphone className="h-6 w-6" />} title="Réseaux sociaux" link="/dashboard/reseaux-sociaux" />
             <CategoryCard icon={<BookOpen className="h-6 w-6" />} title="Business" link="/dashboard/business" />
+            <CategoryCard icon={<BrainCog className="h-6 w-6" />} title="Intelligence Artificielle" link="/dashboard/intelligence-artificielle" />
             <CategoryCard icon={<GraduationCap className="h-6 w-6" />} title="Formations & Coaching" link="/dashboard/formations-coaching" />
           </div>
         </div>
